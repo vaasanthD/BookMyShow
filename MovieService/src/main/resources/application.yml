@@ -1,0 +1,28 @@
+server:
+  port: 8384     
+ 
+#spring:
+#  datasource:
+#     driver-class-name: oracle.jdbc.OracleDriver
+#     url: jdbc:oracle:thin:@localhost:1521:xe
+#     username: sys as sysdba
+#     password: admin@123
+#  jpa:
+#      show-sql: true
+#      hibernate:
+#        ddl-auto: update
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/bookmyshow
+    username: root
+    password: Root@123
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    
